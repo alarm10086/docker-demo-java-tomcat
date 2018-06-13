@@ -1,5 +1,4 @@
-FROM daocloud.io/brandpano/ubuntu-svn-maven-tomcat
-
+FROM daocloud.io/liushaoping/maven-tomcat
 ADD pom.xml /tmp/build/
 RUN cd /tmp/build && mvn -q dependency:resolve
 
